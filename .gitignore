@@ -1,2 +1,7 @@
 ivm.sh
 iverilog/
+
+**/simulation/
+
+# Binary Files
+**/run/
