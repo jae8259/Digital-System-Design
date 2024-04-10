@@ -21,7 +21,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU_test();
+module alu_test();
     
     // Inputs
     reg [31:0]	a;
@@ -49,6 +49,7 @@ module ALU_test();
     //   exp_result
     // of the ALU. Make sure the array has at least 100 entries.
     // Note: we will not store 'exp_zero' in this array.
+    reg [99:0] testvec[11:0];
     
     // The test clock generation
     always				// process always triggers
@@ -63,14 +64,15 @@ module ALU_test();
         // TO DO:
         // Read the content of the file testvectors_hex.txt into the
         // array testvec. The file contains values in hexadecimal format
-        
+        $readmemh("ALU/test/testvectors_hex.txt", testvec);
         err_cnt = 0; // number of errors
         vec_cnt = 0; // number of vectors
     end
     
     // TO DO:
     // calculate the value of 'exp_zero' from the 'exp_result'
-    
+    assign exp_zero = exp_result == 32'b0;
+
     // Tests
     always @ (posedge clk)		// trigger with the test clock
     begin
@@ -87,7 +89,7 @@ module ALU_test();
         if ((result !== exp_result) | (zero !== exp_zero))
         begin
             // Display message
-            $display("Error at %5d ns: Aluop %b a = %h b = %h", $time, aluop,a,b);	// %h displays hex
+            $display("%dth Test: Error at %5d ns: Aluop %b a = %h b = %h", vec_cnt+1, $time, aluop,a,b);	// %h displays hex
             $display("       %h (%h expected)",result,exp_result);
             $display(" Zero: %b (%b expected)",zero,exp_zero);							// %b displays binary
             err_cnt = err_cnt + 1;																// increment error count
@@ -111,5 +113,12 @@ module ALU_test();
     
     // TO DO:
     // Instantiate the Unit Under Test (UUT)
+    alu dut(
+        .a(a),
+        .b(b),
+        .alu_op(aluop),
+        .result(result),
+        .zero(zero)
+    );
     
 endmodule

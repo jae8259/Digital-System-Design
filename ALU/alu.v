@@ -2,7 +2,8 @@ module alu (
   input [31:0] a,
   input [31:0] b,
   input [3:0] alu_op,
-  output reg [31:0] result
+  output reg [31:0] result,
+  output reg zero
 );
   always @(*) begin
     case (alu_op)
@@ -15,5 +16,6 @@ module alu (
       4'b1010: result = a > b;
       default: result = 32'b0;
     endcase
+    zero = result == 32'b0;
   end
 endmodule
