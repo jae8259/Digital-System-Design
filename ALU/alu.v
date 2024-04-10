@@ -9,11 +9,11 @@ module alu (
     case (alu_op)
       4'b0000: result = a + b;
       4'b0010: result = a - b;
-      4'b0100: result = a && b;
-      4'b0101: result = a || b;
+      4'b0100: result = a & b;
+      4'b0101: result = a | b;
       4'b0110: result = a ^ b;
       4'b0111: result = ~(a | b);
-      4'b1010: result = a > b;
+      4'b1010: result = $signed(a) > $signed(b);
       default: result = 32'b0;
     endcase
     zero = result == 32'b0;
