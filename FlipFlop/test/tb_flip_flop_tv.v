@@ -23,7 +23,7 @@ module tb_flip_flop_tv();
 	
 	// Read Testvectors into an Array
 	initial begin
-		$readmemb("tv_flipflop.tv", testvectors);
+		$readmemb("test/asset/tv_flipflop.tv", testvectors);
 		vectornum = 0;
 		errors = 0;
 		reset_n = 0;
@@ -53,13 +53,4 @@ module tb_flip_flop_tv();
 			end
 		end
 	end
-
-	initial begin
-    $dumpfile("./file_base.vcd");
-    $dumpvars(0, dut);
-  end
-
-  initial begin 
-    #(2000) $finish;
-  end
 endmodule

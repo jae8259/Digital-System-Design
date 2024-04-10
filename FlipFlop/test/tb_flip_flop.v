@@ -30,13 +30,4 @@ module tb_flip_flop ();
     #27
     in_d = 1'b1;
   end
-
-  initial begin
-    $dumpfile("./file_base.vcd");
-    $dumpvars(0, dut);
-  end
-
-  initial begin 
-    #(2000) $finish;
-  end
 endmodule
