@@ -63,3 +63,5 @@ Baas, B. (2021). _EEC 180 - Digital Systems II_[Lecture Page]. UCDVIS. https://w
 Style Guides. (2024). _lowRISC Verilog Coding Style Guide_. Github. https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md#lowrisc-verilog-coding-style-guide
 
 https://course.ece.cmu.edu/~ece447/s15/lib/exe/fetch.php?media=goodrtl-parkin.pdf
+
+Roth, C. H., John, L. K., & Lee, B. K. (2016). Digital systems design using Verilog. Cengage Learning.
