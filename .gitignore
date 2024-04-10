@@ -6,3 +6,5 @@ iverilog/
 # Binary Files
 **/run/
 run/
+*.out
+**/*.out
