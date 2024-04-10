@@ -29,14 +29,14 @@ Inspired by _Directories Within the Project_[Ba21].
 
 ```
 |-<project>
-    |-hdl/
+    |-module/
     |-test/
     |-simulation/
     |-run/
     |-log/
 ```
 
-## hdl/
+## module/
 
 The HDL directory is where all hardware Verilog source \*.v files to be used for synthesis belong.
 
@@ -65,3 +65,7 @@ Style Guides. (2024). _lowRISC Verilog Coding Style Guide_. Github. https://gith
 https://course.ece.cmu.edu/~ece447/s15/lib/exe/fetch.php?media=goodrtl-parkin.pdf
 
 Roth, C. H., John, L. K., & Lee, B. K. (2016). Digital systems design using Verilog. Cengage Learning.
+
+Beaumont, J., Flautner, K., Manerkar Y. (2024). EECS 370: Intro to Computer Organization. _The University of Michigan, Winter 2024_. https://eecs370.github.io/
+
+Mutlu, O. (2022). Digital Design and Computer Architecture. _ETH Zurich_. https://safari.ethz.ch/digitaltechnik/spring2022/
