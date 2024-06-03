@@ -57,6 +57,7 @@ object file from running the veriog files.
 log files reside here.
 
 # References
+http://www.asic-world.com/systemverilog/tutorial.html
 
 Baas, B. (2021). _EEC 180 - Digital Systems II_[Lecture Page]. UCDVIS. https://www.ece.ucdavis.edu/~bbaas/180/tutorials/file.organization.html
 
