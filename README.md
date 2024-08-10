@@ -1,6 +1,9 @@
 # Digital-System-Design
 
 Personal repository on studying digital design using verilog.
+https://freegear.tistory.com/236
+https://www.embecosm.com/appnotes/ean6/embecosm-or1k-verilator-tutorial-ean6-issue-1.pdf
+https://blog.naver.com/doksg/222038542081
 
 # How to replicate
 
@@ -9,11 +12,19 @@ vvp a.out
 
 # Tools
 
+## OpenRISC
+https://www.embecosm.com/appnotes/ean2/html/index.html
+
 ## VS Code
 
 ## Icarus verilog
 
 https://github.com/steveicarus/iverilog
+
+## Verilator
+
+https://verilator.org/guide/latest/install.html
+https://m.blog.naver.com/doksg/221979883906
 
 # Conventions
 
@@ -57,6 +68,7 @@ object file from running the veriog files.
 log files reside here.
 
 # References
+
 http://www.asic-world.com/systemverilog/tutorial.html
 
 Baas, B. (2021). _EEC 180 - Digital Systems II_[Lecture Page]. UCDVIS. https://www.ece.ucdavis.edu/~bbaas/180/tutorials/file.organization.html
